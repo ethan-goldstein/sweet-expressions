@@ -1,0 +1,30 @@
+.main-nav ul {
+    list-style-type: none;
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-nav li {
+    padding: 5px 0;
+}
+
+.main-nav a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 769px) {
+    .main-nav ul {
+        display: flex;
+        margin: 0;
+    }
+
+    .main-nav li {
+        padding: 0 0 0 25px;
+    }
+}

@@ -1,8 +1,31 @@
-.main-header h1 {color:blueviolet};
+.main-header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 15px 5%;
+}
 
-#logo {
-    width: 100px;
-    height: 100px;
+.main-header .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header .logo {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 15px;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+@media only screen and (min-width: 769px) {
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

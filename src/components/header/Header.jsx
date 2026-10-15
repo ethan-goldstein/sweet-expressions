@@ -5,8 +5,10 @@ import Navigation from "../navigation/Navigation";
 const Header = () => {
     return (
         <header className="main-header">
-            <img id="logo" src={logo} alt="Logo" />
-            <h1>My App</h1>
+            <div className="brand">
+                <img className="logo" src={logo} alt="Sweet Expressions logo" />
+                <h1>Sweet Expressions</h1>
+            </div>
             <Navigation />
         </header>
     );
