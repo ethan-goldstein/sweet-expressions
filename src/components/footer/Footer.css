@@ -1,0 +1,7 @@
+#main-footer {
+    background:var(--main-color);
+    color:var(--light-color);
+    text-align:center;
+    padding:2.5px;
+    border-radius:0px 0px 5px 5px;
+}

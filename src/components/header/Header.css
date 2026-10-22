@@ -1,31 +1,32 @@
 .main-header {
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 15px 5%;
-}
-
-.main-header .brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-header .logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
+    background: var(--main-color);
+    position:relative;
+    min-height:70px;
+    border-radius:5px 5px 0 0;
 }
 
 .main-header h1 {
-    margin: 0;
-    font-size: 28px;
+    margin:0;
+    text-align: center;
+    line-height:70px;
 }
 
-@media only screen and (min-width: 769px) {
-    .main-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.main-header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    max-width:100px;
+    padding:15px;
+    display:block;
+    margin:auto;
+}
+
+@media only screen and (min-width: 768px) {
+    #logo {
+        position:absolute;
+        top:0;
+        left:0;
     }
 }
