@@ -1,0 +1,98 @@
+#hero {
+    padding: 50px 8%;
+}
+
+#hero .columns {
+    align-items: center;
+}
+
+#hero-text,
+#hero-image {
+    flex: 1;
+}
+
+#hero-text {
+    padding-right: 50px;
+}
+
+#hero-text h2 {
+    font-size: 45px;
+    margin-top: 0;
+}
+
+#hero-text p {
+    line-height: 1.5;
+}
+
+#hero-image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+#occasions {
+    background: var(--white);
+    padding: 40px 8%;
+}
+
+#occasions h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#home-about {
+    padding: 45px 8%;
+}
+
+#home-about .columns > section {
+    flex: 1;
+    padding: 20px;
+}
+
+#home-about h2 {
+    color: var(--primary-color);
+}
+
+#home-about p {
+    line-height: 1.5;
+}
+
+#home-contact {
+    background: var(--white);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Smaller Screens */
+
+@media only screen and (max-width: 768px) {
+    #hero {
+        padding: 30px 8%;
+    }
+
+    #hero-text {
+        padding-right: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    #hero-text h2 {
+        font-size: 32px;
+    }
+
+    #occasions {
+        padding: 30px 8%;
+    }
+
+    #occasions h2 {
+        font-size: 26px;
+    }
+
+    #home-about {
+        padding: 30px 8%;
+    }
+
+    #home-about .columns > section {
+        padding: 10px 0;
+    }
+}

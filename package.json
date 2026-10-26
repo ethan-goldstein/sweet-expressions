@@ -1,6 +1,6 @@
 {
-  "homepage": "/frontend",
-  "name": "frontend",
+  "homepage": "https://ethan-goldstein.github.io/sweet-expressions",
+  "name": "sweet-expressions",
   "version": "0.1.0",
   "private": false,
   "dependencies": {

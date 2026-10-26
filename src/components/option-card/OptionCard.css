@@ -1,0 +1,19 @@
+.option-card {
+    flex: 1;
+    background: var(--white);
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.option-card h3 {
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .option-card {
+        margin: 20px 0;
+        padding: 20px;
+    }
+}

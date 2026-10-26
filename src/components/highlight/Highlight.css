@@ -1,0 +1,9 @@
+.highlight h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.highlight p {
+    line-height: 1.5;
+    margin-top: 0;
+}

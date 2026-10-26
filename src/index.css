@@ -1,65 +1,68 @@
+/* Ethan Goldstein - CSCE 242 */
+
 :root {
-  --main-color: #295095;
-  --accent-color: #6393e9;
-  --light-color: #ffffff;
-  --dark-color: #000000;
+  --main-background: #f8efeb;
+  --primary-color: #9e2f4d;
+  --secondary-color: #f4e7e3;
+  --text-color: #402d2b;
+  --white: #ffffff;
 }
 
 html, body {
-  margin:0;
+  margin: 0;
 }
 
 body {
-  font-family:Arial, Helvetica, sans-serif;
-  background-size: cover;
-  background-position: center center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  background: var(--main-background);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
 }
 
 #content {
-    display:flex;
-    flex-direction: column;
-    min-height:100vh;
-    margin:0 auto;
-    width:80%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.page {
-  padding:10px;
-  background:rgba(255,255,255,.6);
-  flex-grow:1;
+main {
+  flex-grow: 1;
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
 }
 
-/* Typography */
-h2 {
-  text-align:center;
-  color:#295095;
+.columns {
+  display: flex;
 }
 
-.hidden {
-  display:none;
+.button {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-/* Larger Screens */
-@media only screen and (min-width: 768px) {
+.button:hover {
+  opacity: 0.9;
+}
+
+.center {
+  text-align: center;
+}
+
+.category {
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+/* Smaller Screens */
+
+@media only screen and (max-width: 768px) {
   .columns {
-    display:flex;
-  }
-
-  .one {
-    flex:1;
-  }
-
-  .two {
-    flex:2;
-  }
-
-  .three {
-    flex:3;
+    display: block;
   }
 }

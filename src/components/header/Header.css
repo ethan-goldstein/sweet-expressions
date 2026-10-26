@@ -1,32 +1,32 @@
-.main-header {
-    background: var(--main-color);
-    position:relative;
-    min-height:70px;
-    border-radius:5px 5px 0 0;
+#main-header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 15px 5%;
 }
 
-.main-header h1 {
-    margin:0;
-    text-align: center;
-    line-height:70px;
+#main-header h1 {
+    margin: 0;
 }
 
-.main-header h1 a {
-    color: white;
+#main-header h1 a {
+    color: var(--white);
     text-decoration: none;
 }
 
-#logo {
-    max-width:100px;
-    padding:15px;
-    display:block;
-    margin:auto;
+/* Larger Screens: title on the left, menu on the right */
+
+@media only screen and (min-width: 1025px) {
+    #main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-@media only screen and (min-width: 768px) {
-    #logo {
-        position:absolute;
-        top:0;
-        left:0;
+/* Medium and Smaller Screens: title centered above the menu */
+
+@media only screen and (max-width: 1024px) {
+    #main-header h1 {
+        text-align: center;
     }
 }

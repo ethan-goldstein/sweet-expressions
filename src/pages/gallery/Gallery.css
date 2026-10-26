@@ -1,0 +1,24 @@
+#gallery {
+    padding: 20px 12% 60px;
+}
+
+#cookie-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery .center {
+    margin-top: 30px;
+}
+
+/* Smaller Screens */
+
+@media only screen and (max-width: 768px) {
+    #gallery {
+        padding: 20px 8% 40px;
+    }
+
+    #cookie-list {
+        display: block;
+    }
+}

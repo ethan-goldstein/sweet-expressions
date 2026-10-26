@@ -1,0 +1,57 @@
+#options {
+    padding: 20px 18% 50px;
+}
+
+#how-it-works {
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 40px 8%;
+}
+
+#option-images {
+    padding: 40px 20%;
+}
+
+#option-images .columns {
+    justify-content: center;
+}
+
+#option-images img {
+    width: 45%;
+    margin: 2.5%;
+    object-fit: cover;
+}
+
+/* Medium Screens */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #options {
+        padding: 20px 8% 50px;
+    }
+
+    #option-images {
+        padding: 40px 8%;
+    }
+}
+
+/* Smaller Screens */
+
+@media only screen and (max-width: 768px) {
+    #options {
+        padding: 10px 8% 30px;
+    }
+
+    #how-it-works {
+        padding: 30px 8%;
+    }
+
+    #option-images {
+        padding: 30px 8%;
+    }
+
+    #option-images img {
+        width: 100%;
+        margin: 10px 0;
+        display: block;
+    }
+}
