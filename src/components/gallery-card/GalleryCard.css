@@ -12,6 +12,7 @@
     height: 200px;
     object-fit: cover;
     display: block;
+    cursor: zoom-in;
 }
 
 .gallery-card h3 {

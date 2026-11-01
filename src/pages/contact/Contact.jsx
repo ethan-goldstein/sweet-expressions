@@ -1,10 +1,43 @@
 import "./Contact.css";
+import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import PageTitle from "../../components/page-title/PageTitle";
 import Step from "../../components/step/Step";
 
 const Contact = () => {
+    const [sending, setSending] = useState(false);
+
+    //sends the form to Web3Forms, which emails it to me, then shows a toast
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setSending(true);
+        const loading = toast.loading("Sending your order request...");
+
+        const formData = new FormData(event.target);
+        formData.append("access_key", "23a460a0-68ac-476c-b02d-1ee47215e3b3");
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+            const data = await response.json();
+
+            if (data.success) {
+                toast.success("Thanks! We got your request and will be in touch soon.", { id: loading });
+                event.target.reset();
+            } else {
+                toast.error("Something went wrong. Please try again.", { id: loading });
+            }
+        } catch (error) {
+            toast.error("Couldn't send right now. Please check your connection.", { id: loading });
+        }
+
+        setSending(false);
+    };
+
     return (
         <div id="contact-page" className="page">
+            <Toaster position="top-center" />
             <PageTitle
                 title="Let's Create Something Sweet"
                 text="Tell us a little about your celebration and we'll help bring your cookie ideas to life."
@@ -15,8 +48,7 @@ const Contact = () => {
                     <section id="order-form">
                         <h2>Request a Custom Order</h2>
 
-                        {/* the form gets hooked up in a later part, so for now it just doesn't reload the page */}
-                        <form id="contact-form" onSubmit={(e) => e.preventDefault()}>
+                        <form id="contact-form" onSubmit={onSubmit}>
                             <p>
                                 <label htmlFor="name">Your Name</label>
                                 <input type="text" id="name" name="name" required />
@@ -46,7 +78,9 @@ const Contact = () => {
                                 <textarea id="message" name="message" rows="5"></textarea>
                             </p>
 
-                            <button type="submit">Send Order Request</button>
+                            <button type="submit" disabled={sending}>
+                                {sending ? "Sending..." : "Send Order Request"}
+                            </button>
                         </form>
                     </section>
 

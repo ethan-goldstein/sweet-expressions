@@ -3,7 +3,11 @@ import "./GalleryCard.css";
 const GalleryCard = (props) => {
     return (
         <section className="gallery-card">
-            <img src={`${process.env.PUBLIC_URL}/${props.image}`} alt={props.name} />
+            <img
+                src={`${process.env.PUBLIC_URL}/${props.image}`}
+                alt={props.name}
+                onClick={props.onImageClick}
+            />
             <h3>{props.name}</h3>
             <p className="gallery-category">{props.category}</p>
             <p>{props.description}</p>
