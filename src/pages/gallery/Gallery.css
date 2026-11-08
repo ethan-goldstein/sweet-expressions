@@ -11,6 +11,10 @@
     margin-top: 30px;
 }
 
+.gallery-status {
+    font-style: italic;
+}
+
 /* Smaller Screens */
 
 @media only screen and (max-width: 768px) {

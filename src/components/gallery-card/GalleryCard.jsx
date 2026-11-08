@@ -4,7 +4,7 @@ const GalleryCard = (props) => {
     return (
         <section className="gallery-card">
             <img
-                src={`${process.env.PUBLIC_URL}/${props.image}`}
+                src={props.image}
                 alt={props.name}
                 onClick={props.onImageClick}
             />
