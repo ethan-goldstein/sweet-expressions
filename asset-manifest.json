@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sweet-expressions/static/css/main.cef8056b.css",
-    "main.js": "/sweet-expressions/static/js/main.6fa37ddd.js",
+    "main.css": "/sweet-expressions/static/css/main.c9655914.css",
+    "main.js": "/sweet-expressions/static/js/main.3e29c53a.js",
     "index.html": "/sweet-expressions/index.html",
-    "main.cef8056b.css.map": "/sweet-expressions/static/css/main.cef8056b.css.map",
-    "main.6fa37ddd.js.map": "/sweet-expressions/static/js/main.6fa37ddd.js.map"
+    "main.c9655914.css.map": "/sweet-expressions/static/css/main.c9655914.css.map",
+    "main.3e29c53a.js.map": "/sweet-expressions/static/js/main.3e29c53a.js.map"
   },
   "entrypoints": [
-    "static/css/main.cef8056b.css",
-    "static/js/main.6fa37ddd.js"
+    "static/css/main.c9655914.css",
+    "static/js/main.3e29c53a.js"
   ]
 }
