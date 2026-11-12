@@ -1,0 +1,26 @@
+.house {
+    background-color: var(--medium-light-color);
+    padding: 20px;
+    border-radius: 8px;
+    position:relative;
+    overflow:hidden;
+}
+
+.house img {
+    width: 100%;
+    display:block;
+    
+}
+
+.house h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 14px 20px;
+    color: #17365D;
+    font-weight: 600;
+    text-align:center;
+    background: var(--medium-light-color);
+}

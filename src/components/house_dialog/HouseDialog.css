@@ -1,0 +1,24 @@
+#house-dialog-content {
+    position:relative;
+}
+
+#house-dialog #edit-links {
+    position:absolute;
+    right:20%;
+    top:10px;
+}
+
+#house-dialog #edit-links a {
+    color: var(--main-color);
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 22px;
+}
+
+#house-dialog p {
+    margin: 0;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd8ce;
+    color: var(--accent-dark);
+    text-align: left;
+}

@@ -9,6 +9,7 @@ import Options from "./pages/options/Options";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Details from "./pages/details/Details";
+import Listings from "./pages/listings/Listings";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="details" element={<Details />} />
+          <Route path="listings" element={<Listings />} />
         </Route>
       </Routes>
     </HashRouter>
